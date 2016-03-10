@@ -22,3 +22,21 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.navbar-inverse 
+{
+    background-color: #240706;
+    color: #E1DBD8;
+}
+.box
+{
+    border: 2px solid #E1DBD8;
+    min-height: 80px;
+    min-width: 70px;
+}
+
+.box-header
+{
+    float: right;
+    font-size: 0.85em;
+}

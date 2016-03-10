@@ -10,24 +10,27 @@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+        @*<div class="container">*@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
+            @*<div class="navbar-collapse collapse">*@
+                <div class="col-xs-1 text-center box"> <span class="box-header"> 1 </span> <img height="50" width="50" src="~/Content/img/message.png" /> <br /> Message</div>
+                <div class="col-xs-1 text-center box"> <span class="box-header"> 2 </span> <img height="50" width="50" src="~/Content/img/pallets.png" /> <br /> Pallets</div>
+                <div class="col-xs-1 text-center box"> <span class="box-header"> 3 </span> <img height="45" src="~/Content/img/planning.png" /> <br /> Planning</div>
+                <div class="col-xs-1 text-center box"> <span class="box-header"> 4 </span> <img height="50" width="50" src="~/Content/img/location.png" /> <br /> Locatie</div>
+                <div class="col-xs-1 text-center box"> <span class="box-header"> 5 </span> <img height="50" width="50" src="~/Content/img/HR.png" /> <br /> HR</div>
+                <div class="col-xs-1 text-center box"> <span class="box-header"> 6 </span> <img height="50" width="50" src="~/Content/img/Chat.png" /> <br /> Chat</div>
+                <div class="col-xs-1 box"> <span class="box-header"> 7 </span> </div>
+                <div class="col-xs-1 box"> <span class="box-header"> 8 </span> </div>
+                <div class="col-xs-1 box"> <span class="box-header"> 9 </span> </div>
+                <div class="col-xs-3 text-center box"> <img height="50" width="50" src="~/Content/img/message.png" /> <br /> Log off</div>
+            @*</div>*@
+        @*</div>*@
     </div>
     <div class="container body-content">
         @RenderBody()
