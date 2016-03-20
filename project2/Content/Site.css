@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
@@ -30,7 +30,7 @@ textarea {
 }
 .box
 {
-    border: 2px solid #E1DBD8;
+    border: 1px solid #E1DBD8;
     min-height: 80px;
     min-width: 70px;
 }
@@ -40,3 +40,61 @@ textarea {
     float: right;
     font-size: 0.85em;
 }
+#top-menu a
+{
+    color: #ffffff;
+
+}
+
+.box:hover
+{
+
+    background-color: #8C7670;
+}
+.toolbar, .selection
+{
+    border: 1px solid #E1DBD8;
+    border-top:none;
+}
+#left-menu
+{
+     background-color: #4C3630;
+     height: 100%;
+     padding: 0;
+     text-align: center;
+     content:"";
+     position:fixed;
+     z-index: 10;
+
+}
+
+.left-box:hover
+{
+     background-color: #8C7670;
+
+}
+.left-box
+{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border: 1px solid #E1DBD8;
+     min-height: 34px;
+
+
+}
+#left-menu a
+{
+    color: #ffffff;
+
+}
+.content
+{
+    margin-left: 173px;
+
+}
+#left-menu a:hover
+{
+    text-decoration: none;
+
+}
+

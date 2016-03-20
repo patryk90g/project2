@@ -18,26 +18,44 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            @*<div class="navbar-collapse collapse">*@
-                <div class="col-xs-1 text-center box"> <span class="box-header"> 1 </span> <img height="50" width="50" src="~/Content/img/message.png" /> <br /> Message</div>
-                <div class="col-xs-1 text-center box"> <span class="box-header"> 2 </span> <img height="50" width="50" src="~/Content/img/pallets.png" /> <br /> Pallets</div>
-                <div class="col-xs-1 text-center box"> <span class="box-header"> 3 </span> <img height="45" src="~/Content/img/planning.png" /> <br /> Planning</div>
-                <div class="col-xs-1 text-center box"> <span class="box-header"> 4 </span> <img height="50" width="50" src="~/Content/img/location.png" /> <br /> Locatie</div>
-                <div class="col-xs-1 text-center box"> <span class="box-header"> 5 </span> <img height="50" width="50" src="~/Content/img/HR.png" /> <br /> HR</div>
-                <div class="col-xs-1 text-center box"> <span class="box-header"> 6 </span> <img height="50" width="50" src="~/Content/img/Chat.png" /> <br /> Chat</div>
-                <div class="col-xs-1 box"> <span class="box-header"> 7 </span> </div>
-                <div class="col-xs-1 box"> <span class="box-header"> 8 </span> </div>
-                <div class="col-xs-1 box"> <span class="box-header"> 9 </span> </div>
-                <div class="col-xs-3 text-center box"> <img height="50" width="50" src="~/Content/img/message.png" /> <br /> Log off</div>
-            @*</div>*@
+            <div id="top-menu">
+        <a href="#"><div class="col-xs-1 text-center box"> <span class="box-header"> 1 </span> <img height="50" width="50" src="~/Content/img/message.png" /> <br /> Message</div> </a>
+        <a href="#"><div class="col-xs-1 text-center box"> <span class="box-header"> 2 </span> <img height="50" width="50" src="~/Content/img/pallets.png" /> <br /> Pallets</div></a>
+        <a href="#"><div class="col-xs-1 text-center box"> <span class="box-header"> 3 </span> <img height="45" src="~/Content/img/planning.png" /> <br /> Planning</div></a>
+        <a href="#"><div class="col-xs-1 text-center box"> <span class="box-header"> 4 </span> <img height="50" width="50" src="~/Content/img/location.png" /> <br /> Locatie</div></a>
+        <a href="#"><div class="col-xs-1 text-center box"> <span class="box-header"> 5 </span> <img height="50" width="50" src="~/Content/img/HR.png" /> <br /> HR</div></a>
+        <a href="#"><div class="col-xs-1 text-center box"> <span class="box-header"> 6 </span> <img height="50" width="50" src="~/Content/img/Chat.png" /> <br /> Chat</div></a>
+        <a href="#"><div class="col-xs-1 box"> <span class="box-header"> 7 </span> </div></a>
+        <a href="#"><div class="col-xs-1 box"> <span class="box-header"> 8 </span> </div></a>
+        <a href="#"><div class="col-xs-1 box"> <span class="box-header"> 9 </span> </div></a>
+        <a href="#"><div class="col-xs-3 text-center box"> <img height="50" width="50" src="~/Content/img/message.png" /> <br /> Log off</div></a>
+            </div>
+        <div class="clearfix"></div>
+        <div>
+            <div class="col-xs-2 text-center toolbar"> Toolbar </div>
+            <div class="col-xs-10 text-center selection"> Selection </div>             
+        </div>
         @*</div>*@
     </div>
-    <div class="container body-content">
+    <div id="left-menu" class="col-xs-2">
+        <a href="#"><div class="col-xs-12 left-box"> Navi 1 </div></a>
+        <a href="#"><div class="col-xs-12 left-box"> Navi 2 </div></a>
+        <a href="#"><div class="col-xs-12 left-box"> Navi 3 </div></a>
+        <a href="#"><div class="col-xs-12 left-box"> Navi 4 </div></a>
+        <a href="#"><div class="col-xs-12 left-box"> Navi 5 </div></a>
+        <a href="#"><div class="col-xs-12 left-box"> Navi 6 </div></a>
+        <a href="#"><div class="col-xs-12 left-box"> Navi 7 </div></a>
+        <a href="#"><div class="col-xs-12 left-box"> Navi 8 </div></a>
+        <a href="#"><div class="col-xs-12 left-box">  </div></a>
+
+    </div>
+
+
+
+
+    <div class="content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+       
     </div>
 
     @Scripts.Render("~/bundles/jquery")
